@@ -57,14 +57,41 @@ li{
   width: 80%;
   height: 50px;
   padding: 25px 0 0 0;
-  border: dashed 3px #616f39;
   background: #272121;
+  border: dashed 3px #616f39;
 }
 
-.hero, .content{
+.form{
   text-align: center;
-  margin: 50px auto;
-  width: 80%;
-  height: 400px;
-  background: #272121
+  width: 480px;
+  height: 350px;
+  margin: auto;
+  margin-top: 80px;
+  background: #272121;
+  border: solid 1px #a7d129;
+}
+
+.signupForm{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.formField{
+  width: 75%;
+  margin: 25px auto;
+  height: 40px;
+}
+
+.formBtn{
+  width: 80px;
+  height: 25px;
+  margin: auto;
+  border: solid 1px #a7d129;
+  background: #a7d129;
+  color: #fff;
+}
+
+.formBtn:active{
+  transform: translateY(4px);
 }

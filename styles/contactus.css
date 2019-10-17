@@ -60,11 +60,3 @@ li{
   border: dashed 3px #616f39;
   background: #272121;
 }
-
-.hero, .content{
-  text-align: center;
-  margin: 50px auto;
-  width: 80%;
-  height: 400px;
-  background: #272121
-}
