@@ -50,7 +50,7 @@ li{
 
 
 .footer{
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 10%;
   text-align: center;
@@ -67,6 +67,7 @@ li{
   height: 350px;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 40px;
   background: #272121;
   border: solid 1px #a7d129;
 }

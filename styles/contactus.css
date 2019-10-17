@@ -50,13 +50,55 @@ li{
 
 
 .footer{
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 10%;
   text-align: center;
   width: 80%;
   height: 50px;
   padding: 25px 0 0 0;
-  border: dashed 3px #616f39;
   background: #272121;
+  border: dashed 3px #616f39;
+}
+
+.form{
+  text-align: center;
+  width: 480px;
+  height: 550px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background: #272121;
+  border: solid 1px #a7d129;
+}
+
+.contactusForm{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.formField{
+  width: 75%;
+  margin: 25px auto;
+  height: 40px;
+}
+
+.biggerField{
+  width: 75%;
+  margin: 25px auto;
+  height: 80px;
+}
+
+.formBtn{
+  width: 80px;
+  height: 25px;
+  margin: auto;
+  border: solid 1px #a7d129;
+  background: #a7d129;
+  color: #fff;
+}
+
+.formBtn:active{
+  transform: translateY(4px);
 }
