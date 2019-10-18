@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+body
+{
+	margin: 0;
+	padding: 0;
+	 height: calc(100vh - 8em);
+  padding: 4em;
+  color: #4CAF50;
+  
+  font-family: 'Permanent Marker', cursive;  
+  background-color: rgb(25,25,25); 
+}
+section
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background: url(https://images2.alphacoders.com/687/687544.jpg);
+}
+section:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background: url(https://images2.alphacoders.com/687/687544.jpg);
+	opacity: .5;
+	mix-blend-mode: hard-light;
+}
+section:hover:before
+{
+	animation: animate .2s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+	10%
+	{
+		background-position: 5px 0;
+	}
+	20%
+	{
+		background-position: -5px 0;
+	}
+	30%
+	{
+		background-position: 15px 0;
+	}
+	40%
+	{
+		background-position: -5px 0;
+	}
+	50%
+	{
+		background-position: -25px 0;
+	}
+	60%
+	{
+		background-position: -50px 0;
+	}
+	70%
+	{
+		background-position: 0 -20px;
+	}
+	80%
+	{
+		background-position: -60px -20px;
+	}
+	81%
+	{
+		background-position: 0 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(360deg);
+	}
+}
+
+
+.line-1{
+    position: relative;
+      
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 500%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 100ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
