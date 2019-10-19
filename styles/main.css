@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body{
   background: #000;
   color: #a7d129;
@@ -286,5 +288,118 @@ li{
   100% {
     -webkit-transform: skewX(-10deg) scaleX(0.95);
             transform: skewX(-10deg) scaleX(0.95);
+  }
+}
+
+
+/*Glitch Text*/
+.txtBg {
+  background: #444;
+  background-image: repeating-linear-gradient(
+    #121317,
+    #121317 2px,
+    transparent 2px,
+    transparent 4px);
+  background-color: #1e2025;
+  background-size: 8px 8px;
+  animation: bg-glitch 5s infinite alternate;
+}
+
+.glitchText {
+  outline: 0;
+  font-family: Menlo, monospace;
+  font-size: 16px;
+  color: #a7d129;
+  text-align: center;
+  text-shadow: -1px 1px 0 #E123FF,
+    1px -1px 0 #4D7FFF,
+    0px 12px 15px rgba(167,209,41,0.6);
+  animation: text-glow 2s infinite alternate ease-in-out;
+}
+
+@keyframes bg-glitch {
+  0% {
+    background-position: 0 2px;
+  }
+  70% {
+    background-color: #1e2025;
+  }
+  98% {
+    background-position: 0 2px;
+  }
+  99% {
+    background-position: 0 1px;
+  }
+  100% {
+    background-position: 0 3px;
+    background-color: lighten(#1e2025, 2%);
+  }
+}
+
+@keyframes text-glow {
+  66%{
+    text-shadow: -1px 1px 0 #E123FF,
+    1px -1px 0 #4D7FFF,
+    0 0 9px rgba(255,255,255,1);
+  }
+  68% {
+    text-shadow: -2px 2px 0 #E123FF,
+    2px -2px 0 #4D7FFF,
+    0 0 9px rgba(255,255,255,1);
+  }
+  70% {
+    opacity: 1;
+    text-shadow: -1px 1px 0 #E123FF,
+    1px -1px 0 #4D7FFF,
+    0 0 9px rgba(255,255,255,1);
+  }
+  71%{
+    opacity: .6;
+  }
+  72% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80%{
+    opacity: .6;
+  }
+  81% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+  }
+  84%{
+    opacity: .6;
+  }
+  85% {
+    opacity: 1;
+    text-shadow: -1px 1px 0 #E123FF,
+    1px -1px 0 #4D7FFF,
+    0 0 9px rgba(255,255,255,1);
+  }
+  100% {
+    text-shadow: -1px 1px 0 #E123FF,
+    1px -1px 0 #4D7FFF,
+    0 0 14px rgba(255,255,255,1);
+  }
+}
+
+.soon {
+  margin-top: 10vh;
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+  animation: my-current-thought-patterns 8s 1 ease-in-out;
+}
+
+@keyframes my-current-thought-patterns {
+  0% {
+    transform: rotate( 0deg );
+  }
+  10% {
+    transform: rotate( 0deg );
   }
 }
